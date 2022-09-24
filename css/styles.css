@@ -26,9 +26,7 @@ logo-text-color-black #000000 (чорний)
 
 body {
   color: var(--primary-text-color);
-  background-color: var(--main-page-color);
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
 }
 
 .list {
@@ -39,11 +37,12 @@ body {
   color: var(--title-text-color);
 }
 
-.section-header {
+.section-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
+  letter-spacing: 0.03em;
 }
 
 /* Шапка */
@@ -56,16 +55,19 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  font-style: normal;
 }
-.logo span {
+.logo-color-blue {
   color: var(--logo-text-color-blue);
 }
 
-/* Site-nav */
-.site-nav .current {
-  color: var(--logo-text-color-blue);
+.logo-color-white {
+  color: var(--additional-text-color);
 }
-.site-nav a {
+
+/* Site-nav */
+
+.site-nav-link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -73,14 +75,17 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--logo-text-color-blue);
 }
 
+.site-nav .current {
+  color: var(--logo-text-color-blue);
+}
 /* Контакти */
 
-.contacts a {
+.contacts-link {
   color: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -88,48 +93,59 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.contacts a:hover,
-.contacts a:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--logo-text-color-blue);
 }
 
 /* Розділи */
 /* Герой */
 .hero {
+  background-color: var(--additional-page-color);
+}
+
+.hero-title {
   letter-spacing: 0.06em;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
-  background-color: var(--additional-page-color);
+  color: var(--additional-text-color);
 }
 
-.hero button[type="button"] {
+.hero-button {
   color: var(--additional-text-color);
   background-color: var(--logo-text-color-blue);
   font-weight: 700;
   font-size: 16px;
+  font-style: normal;
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
+  font-family: inherit;
+  border: none;
 }
-.hero-header {
-  color: var(--additional-text-color);
+
+.hero-button:hover,
+.hero-button:focus {
+  cursor: pointer;
 }
 
 /* Наші переваги */
 
-.advantages-headers {
+.advantages-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
+  letter-spacing: 0.03em;
 }
 
-.advantages-par {
+.advantages-text {
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* Чим ми займаємося */
@@ -139,29 +155,34 @@ body {
   background-color: var(--section-two-color);
 }
 
-.team .headers {
+.team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
-.team-par {
+.team-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* ----------------ПОРТФОЛІО (початок)---------- */
-.projects .headers {
+.projects-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--title-text-color);
 }
 
-.projects-par {
+.projects-text {
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
 }
 /* ----------------ПОРТФОЛІО (кінець)---------- */
 
@@ -172,6 +193,11 @@ body {
 .address {
   color: var(--additional-text-color);
   text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-weight: 400;
 }
 
 .address:hover,
@@ -179,28 +205,34 @@ body {
   color: var(--logo-text-color-blue);
 }
 
-.contact-details a {
+.contact-details-link {
   color: var(--contact-details-color);
   text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-weight: 400;
 }
-.contact-details a:hover,
-.contact-details a:focus {
+.contact-details-link:hover,
+.contact-details-link:focus {
   color: var(--logo-text-color-blue);
 }
 
 /* Button */
-button[type="button"] {
+.projects-button {
   color: var(--title-text-color);
   background-color: var(--section-two-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: inherit;
   text-align: center;
   border: none;
+  letter-spacing: 0.03em;
 }
-button[type="button"]:hover {
+.projects-button:hover,
+.projects-button:focus {
   color: var(--additional-text-color);
   background-color: var(--logo-text-color-blue);
   cursor: pointer;
