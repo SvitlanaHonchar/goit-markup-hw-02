@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="page">
@@ -12,13 +12,13 @@
     <header>
       <nav>
         <a href="/" class="logo"><span>Web</span>Studio </a>
-        <ul class="list">
-          <li><a href="">Студія</a></li>
-          <li><a href="./portfolio.html">Портфоліо</a></li>
+        <ul class="site-nav list">
+          <li><a href="./index.html">Студія</a></li>
+          <li><a href="./portfolio.html" class="current">Портфоліо</a></li>
           <li><a href="">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="list">
+      <ul class="contacts list">
         <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
@@ -34,7 +34,7 @@
         <button type="button">Маркетинг</button>
       </section>
       <!-- Приклади проектів -->
-      <section>
+      <section class="projects">
         <h2 hidden>Приклади проектів</h2>
         <ul class="list">
           <li>
@@ -44,7 +44,7 @@
               width="370"
             />
             <h3 class="headers">Технокряк</h3>
-            <p>Веб-сайт</p>
+            <p class="projects-par">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -53,7 +53,7 @@
               width="370"
             />
             <h3 class="headers">Постер New Orlean vs Golden Star</h3>
-            <p>Дизайн</p>
+            <p class="projects-par">Дизайн</p>
           </li>
           <li>
             <img
@@ -62,7 +62,7 @@
               width="370"
             />
             <h3 class="headers">Ресторан Seafood</h3>
-            <p>Додаток</p>
+            <p class="projects-par">Додаток</p>
           </li>
           <li>
             <img
@@ -71,7 +71,7 @@
               width="370"
             />
             <h3 class="headers">Проєкт Prime</h3>
-            <p>Маркетинг</p>
+            <p class="projects-par">Маркетинг</p>
           </li>
           <li>
             <img
@@ -80,7 +80,7 @@
               width="370"
             />
             <h3 class="headers">Проєкт Boxes</h3>
-            <p>Додаток</p>
+            <p class="projects-par">Додаток</p>
           </li>
           <li>
             <img
@@ -89,7 +89,7 @@
               width="370"
             />
             <h3 class="headers">Inspiration has no Bordersк</h3>
-            <p>Веб-сайт</p>
+            <p class="projects-par">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -98,7 +98,7 @@
               width="370"
             />
             <h3 class="headers">Видання Limited Edition</h3>
-            <p>Дизайн</p>
+            <p class="projects-par">Дизайн</p>
           </li>
           <li>
             <img
@@ -107,7 +107,7 @@
               width="370"
             />
             <h3 class="headers">Проєкт LAB</h3>
-            <p>Маркетинг</p>
+            <p class="projects-par">Маркетинг</p>
           </li>
           <li>
             <img
@@ -116,12 +116,12 @@
               width="370"
             />
             <h3 class="headers">Growing Business</h3>
-            <p>Додаток</p>
+            <p class="projects-par">Додаток</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <a href="/" class="logo"><span>Web</span>Studio </a>
 
       <address>
@@ -131,8 +131,12 @@
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="contact-details">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="contact-details">
+            <a href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </address>
     </footer>
